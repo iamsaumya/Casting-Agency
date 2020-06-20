@@ -1,4 +1,4 @@
-# CCasting Agency Specifications
+# Casting Agency Specifications
 
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
 
@@ -51,6 +51,10 @@ flask run
 Setting the `FLASK_DEBUG` variable to `True` will detect file changes and restart the server automatically.
 
 Setting the `FLASK_APP` variable to `app` directs flask to use app.py file.
+
+## Hosted
+
+The application is hosted using Heroku. You can find the application [here](https://myudacitycapstoneproject.herokuapp.com/).
 
 ## API
 
