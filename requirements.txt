@@ -37,7 +37,6 @@ pycairo==1.16.2
 pycodestyle==2.5.0
 pycrypto==2.6.1
 pycups==1.9.73
-PyGObject==3.34.0
 pyinotify==0.9.6
 PyJWT==1.7.0
 pymacaroons==0.13.0
