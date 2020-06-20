@@ -27,7 +27,6 @@ launchpadlib==1.10.7
 lazr.restfulclient==0.14.2
 lazr.uri==1.0.3
 lockfile==0.12.2
-louis==3.10.0
 protobuf==3.6.1
 psutil==5.5.1
 psycopg2==2.8.5
