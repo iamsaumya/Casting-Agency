@@ -3,7 +3,6 @@ aniso8601==6.0.0
 autopep8==1.5.2
 bcrypt==3.1.6
 blinker==1.4
-Brlapi==0.6.7
 chardet==3.0.4
 Click==7.0
 command-not-found==0.3
