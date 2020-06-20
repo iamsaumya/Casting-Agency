@@ -22,12 +22,14 @@ class CapstoneTestCase(unittest.TestCase):
         db.drop_all()
         db.create_all()
 
+        # Imserting the data in database.
         initial_movie = Movie(id=1, title="DDLJ", release_date=21233421)
         initial_movie.insert()
 
         initial_actor = Actor(id=1, name="SRK", age=54, gender="Male")
         initial_actor.insert()
 
+        # Dummy data for testing purpose.
         self.actor = {
             "id": 3,
             "name": "Sushant Singh Rajput",
@@ -41,9 +43,9 @@ class CapstoneTestCase(unittest.TestCase):
             "release_date": 999120312
         }
 
-        self.castingdirector = os.getenv(castingdirector)
-        self.executiveproducer = os.getenv(executiveproducer)
-        self.castingassitant = os.getenv(castingassitant)
+        self.castingdirector = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBLcmstaFN5clFkNTlkdkhMUzFoYiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5LmF1dGgwLmNvbS8iLCJzdWIiOiJlYUVKRU1Ob3pPSHRYYkhHaGFnOEFNbzAwMTRJUDBuQ0BjbGllbnRzIiwiYXVkIjoiU1JLIiwiaWF0IjoxNTkyNjY3NjkzLCJleHAiOjE1OTI3NTQwOTMsImF6cCI6ImVhRUpFTU5vek9IdFhiSEdoYWc4QU1vMDAxNElQMG5DIiwic2NvcGUiOiJnZXQ6bW92aWVzIGdldDphY3RvcnMgcGF0Y2g6YWN0b3JzIGRlbGV0ZTphY3RvcnMgcGF0Y2g6bW92aWVzIGRlbGV0ZTptb3ZpZXMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6bW92aWVzIiwiZ2V0OmFjdG9ycyIsInBhdGNoOmFjdG9ycyIsImRlbGV0ZTphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJkZWxldGU6bW92aWVzIl19.gf-0oO1zp_1kmCTZeOGoAAUllDXsqkSUMU2o1EczZ-pkb2A2z0fDj0Zzyd0ZmMteEW5fWdoYNkZ0OOUeFKazAJMESq8__J39EvLxkSxe9CPcoyCT_k6P2FfyBBx34bmDapblng2WsmdbnKdbNy2Ik89AeB7XxW-FUq3JufA9cirryw3b6Tw1UnO73KkPShBSuSBS9P4uq9-opSc8li3VZu4H7iCqXOdacZPTzylUnhEHnBKYKMJbwz8m7gcQ3bR9Ebt7G-pkEZ0ZllLUkXOiyPoYlvZU3NpdAWof7dWSs0BwnHFeyZqNMD90u0ZLWTPx_-8UIbgIGcI-aS907JjHqA"
+        self.executiveproducer = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBLcmstaFN5clFkNTlkdkhMUzFoYiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5LmF1dGgwLmNvbS8iLCJzdWIiOiJlYUVKRU1Ob3pPSHRYYkhHaGFnOEFNbzAwMTRJUDBuQ0BjbGllbnRzIiwiYXVkIjoiU1JLIiwiaWF0IjoxNTkyNjY3NDI5LCJleHAiOjE1OTI3NTM4MjksImF6cCI6ImVhRUpFTU5vek9IdFhiSEdoYWc4QU1vMDAxNElQMG5DIiwic2NvcGUiOiJnZXQ6bW92aWVzIGdldDphY3RvcnMgcG9zdDphY3RvcnMgcGF0Y2g6YWN0b3JzIGRlbGV0ZTphY3RvcnMgcG9zdDptb3ZpZXMgcGF0Y2g6bW92aWVzIGRlbGV0ZTptb3ZpZXMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6bW92aWVzIiwiZ2V0OmFjdG9ycyIsInBvc3Q6YWN0b3JzIiwicGF0Y2g6YWN0b3JzIiwiZGVsZXRlOmFjdG9ycyIsInBvc3Q6bW92aWVzIiwicGF0Y2g6bW92aWVzIiwiZGVsZXRlOm1vdmllcyJdfQ.eDBTX_tPNCNxnphhJjFu5unPtiDxJvRVHvpVneFl7zq_Jr8eNxb4f7YiRgUWt2cm2_wsEjt2GQ0otlMdzxYeR69Eu5TTNmpNdIfJY2QD1gBYTzu4D4kMOeykfq5DdVFT2rvral1V5u0ssC2pvjb5RKcwiOZhVPiIVoanCZuj6WOlvIrMX6usfdwlAlvK6Ua5Dhzt9hSQFPJfDyIbVmRDeCtLpyMnih8mIMaRPjTKA8_AVVmQ2R1byT-MiFGmLBPu6jX8EgP-c9eocrONB51W1LRni3HhrRshLzne5K3yxVo7vOdtNGdGov0Ez4IqBsI05L5yePqI_PSE-fpbCSc75A"
+        self.castingassitant = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBLcmstaFN5clFkNTlkdkhMUzFoYiJ9.eyJpc3MiOiJodHRwczovL2NvZmZlZXNob3B1ZGFjaXR5LmF1dGgwLmNvbS8iLCJzdWIiOiJlYUVKRU1Ob3pPSHRYYkhHaGFnOEFNbzAwMTRJUDBuQ0BjbGllbnRzIiwiYXVkIjoiU1JLIiwiaWF0IjoxNTkyNjY3NzU4LCJleHAiOjE1OTI3NTQxNTgsImF6cCI6ImVhRUpFTU5vek9IdFhiSEdoYWc4QU1vMDAxNElQMG5DIiwic2NvcGUiOiJnZXQ6bW92aWVzIGdldDphY3RvcnMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6bW92aWVzIiwiZ2V0OmFjdG9ycyJdfQ.GpruJHzgpVRofEQOAxW_PT8Clz6ng_J0nnq9fBg_71mOFJPflylXjZLpqPVotrFl3CXYHnlM4FpLQnKoqa5sT9EL6X4BEpPp9CFu5wsAV93jotPENXXiZh8RDB8DwC8SP5acZrTJWOhlXulT9BmGLde1B98WwKlsWHmT4Y03CiqKCeJMUzAUUJkw535oeEbbP4tB6I0iOq2RSIGjGy7AiAKpqV10LXaCtEFJGpZktKhiOw8yVywwiSyXZnF6AL8toXMu1sjMtPC-CI-CkWjZb0CmQXb0OpaMKLRLMgHNzKq12yH5QIXJgWtp_G46tiVJrnzfPEFJI7exxITzEmBoRQ"
 
     def tearDown(self):
         pass

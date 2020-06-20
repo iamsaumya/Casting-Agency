@@ -52,9 +52,13 @@ Setting the `FLASK_DEBUG` variable to `True` will detect file changes and restar
 
 Setting the `FLASK_APP` variable to `app` directs flask to use app.py file.
 
-## Hosted
+## Hosting
 
 The application is hosted using Heroku. You can find the application [here](https://myudacitycapstoneproject.herokuapp.com/).
+
+## Authentication
+
+There is not frontend of the application, please use the JWT tokens shared by me.
 
 ## API
 
