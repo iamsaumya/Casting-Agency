@@ -23,7 +23,6 @@ itsdangerous==1.1.0
 Jinja2==2.10.1
 keyring==18.0.1
 keyrings.alt==3.1.1
-language-selector==0.1
 launchpadlib==1.10.7
 lazr.restfulclient==0.14.2
 lazr.uri==1.0.3
