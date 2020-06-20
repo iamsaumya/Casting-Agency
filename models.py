@@ -6,8 +6,7 @@ from flask_migrate import Migrate
 from datetime import datetime
 
 database_name = "casting_agent"
-database_path = "postgres://postgres:postgres@{}/{}".format(
-    'localhost:5432', database_name)
+database_path = "postgres://uxudaunxqstjmp:bca5dd2f65c95e484ceb53911b89e344926b63bfb86d441ce13d6049e75ce2ed@ec2-18-214-211-47.compute-1.amazonaws.com:5432/d229l7j4f8007n"
 
 db = SQLAlchemy()
 
