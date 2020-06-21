@@ -4,3 +4,4 @@ export castingassitant="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBLcmstaFN5
 export AUTH0_DOMAIN='coffeeshopudacity.auth0.com'
 export ALGORITHMS=['RS256']
 export API_AUDIENCE='SRK'
+export CLIENT_SECRET='r7JWn_JghMnh60Y975B4IAtf1hKuOyPtecjHmwHjpwVPt05_yjsIFQcKV3muGAVC'
