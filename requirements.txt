@@ -30,7 +30,7 @@ protobuf==3.6.1
 psutil==5.6.6
 psycopg2==2.8.5
 psycopg2-binary==2.8.2
-py==1.8.1
+py==1.10.0
 pyasn1==0.4.8
 pycairo==1.16.2
 pycodestyle==2.5.0
