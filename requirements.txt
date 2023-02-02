@@ -66,4 +66,4 @@ systemd-python==234
 virtualenv==15.1.0
 wadllib==1.3.3
 wcwidth==0.2.4
-Werkzeug==0.15.4
+Werkzeug==0.15.5
